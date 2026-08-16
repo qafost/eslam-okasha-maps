@@ -4,174 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مكتب إسلام عكاشة - العتبة للجملة</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/styling/main.css">
 </head>
 <body>
 
-  <div class="app-wrapper">
+  <div class="page">
 
-    <!-- الهيدر واللوجو -->
-    <header class="hero-card">
-      <div class="logo-container">
-        <img src="assets/images/logo.jpg" alt="مكتب إسلام عكاشة" class="logo-img">
+    <!-- الهيدر -->
+    <header class="header">
+      <div class="header-logo">
+        <img src="assets/images/logo.jpg" alt="مكتب إسلام عكاشة">
       </div>
-      <span class="brand-badge"><i class="fa-solid fa-crown"></i> المركز الرئيسي لتجارة الجملة</span>
-      <h1>إسلام عكاشة <span class="en-name">Eslam Okasha</span></h1>
-      <p>أرقى موديلات اللينجيري والتصاميم الحصرية لتجار الجملة والموزعين</p>
+      <p class="header-tag">المركز الرئيسي لتجارة الجملة</p>
+      <h1>إسلام عكاشة</h1>
+      <p class="header-desc">موديلات لينجيري حصرية لتجار الجملة والموزعين</p>
     </header>
 
-    <!-- حالة العمل المباشرة -->
-    <section class="status-card" aria-label="حالة المكتب">
-      <div class="status-info">
-        <h4>حالة المكتب الآن</h4>
-        <p id="time-text">جاري التحقق...</p>
+    <!-- حالة العمل -->
+    <div class="status-bar" aria-label="حالة المكتب">
+      <div class="status-bar-text">
+        <strong>حالة المكتب</strong>
+        <span id="time-text">جاري التحقق...</span>
       </div>
-      <div id="live-indicator" class="pulse-indicator">
-        <span class="dot"></span>
+      <div id="live-indicator" class="status-pill">
+        <span class="status-dot"></span>
         <span id="status-label">جاري التحقق...</span>
       </div>
-    </section>
+    </div>
+
+    <!-- زر رئيسي -->
+    <a href="https://wa.me/201000000000" target="_blank" rel="noopener" class="btn btn-whatsapp btn-block">
+      <i class="fa-brands fa-whatsapp"></i>
+      تواصل على واتساب
+    </a>
 
     <!-- مواعيد العمل -->
-    <section class="hours-card" aria-label="مواعيد العمل">
-      <div class="hours-header">
-        <i class="fa-solid fa-clock"></i>
-        <h4>مواعيد العمل</h4>
-      </div>
-      <div class="hours-list">
-        <div class="hours-row">
-          <span class="hours-day">من الاثنين الي السبت</span>
-          <span class="hours-time">10 ص - 10 م</span>
-        </div>
-        <div class="hours-row">
-          <span class="hours-day">الجمعة</span>
-          <span class="hours-time">9 ص - 9 م</span>
-        </div>
-        <div class="hours-row closed-day">
-          <span class="hours-day">الأحد</span>
-          <span class="hours-time"><i class="fa-solid fa-xmark"></i> إجازة</span>
-        </div>
-      </div>
+    <section class="card" aria-label="مواعيد العمل">
+      <h2 class="card-title"><i class="fa-regular fa-clock"></i> مواعيد العمل</h2>
+      <ul class="hours">
+        <li>
+          <span>من الاثنين إلى السبت</span>
+          <span class="hours-value">10 ص – 10 م</span>
+        </li>
+        <li>
+          <span>الجمعة</span>
+          <span class="hours-value">9 ص – 9 م</span>
+        </li>
+        <li class="hours-closed">
+          <span>الأحد</span>
+          <span class="hours-value">إجازة</span>
+        </li>
+      </ul>
     </section>
 
-    <!-- شبكة التواصل -->
-    <section class="social-section" aria-label="وسائل التواصل">
-      <div class="section-header">
-        <div class="section-title">
-          <i class="fa-solid fa-share-nodes"></i>
-          تابعنا على
-        </div>
-      </div>
-      <div class="bento-grid">
-        <a href="https://wa.me/201000000000" target="_blank" rel="noopener" class="bento-btn wa">
-          <i class="fa-brands fa-whatsapp"></i>
-          <span>واتساب</span>
-        </a>
-        <a href="https://t.me/EslamOkashaLingerie" target="_blank" rel="noopener" class="bento-btn tg">
-          <i class="fa-solid fa-paper-plane"></i>
-          <span>تليجرام</span>
-        </a>
-        <a href="https://facebook.com/EslamOkashaOfficial" target="_blank" rel="noopener" class="bento-btn fb">
-          <i class="fa-brands fa-facebook-f"></i>
-          <span>فيسبوك</span>
-        </a>
-        <a href="https://instagram.com/EslamOkasha" target="_blank" rel="noopener" class="bento-btn ig">
-          <i class="fa-brands fa-instagram"></i>
-          <span>انستجرام</span>
-        </a>
-        <a href="https://tiktok.com/@EslamOkasha" target="_blank" rel="noopener" class="bento-btn tt">
-          <i class="fa-brands fa-tiktok"></i>
-          <span>تيك توك</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- إحصائيات -->
-    <section class="stats-section" aria-label="إحصائيات">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <i class="fa-solid fa-store"></i>
-          <span class="stat-number" data-target="2">0</span>
-          <span class="stat-label">فروع</span>
-        </div>
-        <div class="stat-item">
-          <i class="fa-solid fa-users"></i>
-          <span class="stat-number" data-target="323584">0</span>
-          <span class="stat-label">عميل</span>
-        </div>
-        <div class="stat-item">
+    <!-- التواصل -->
+    <section class="card" aria-label="وسائل التواصل">
+      <h2 class="card-title"><i class="fa-solid fa-link"></i> تابعنا</h2>
+      <div class="btn-stack">
+        <a href="https://t.me/EslamOkashaLingerie" target="_blank" rel="noopener" class="btn btn-telegram">
           <i class="fa-brands fa-telegram"></i>
-          <span class="stat-number" id="tg-subscribers">...</span>
-          <span class="stat-label">مشترك تليجرام</span>
-        </div>
+          تليجرام
+        </a>
+        <a href="https://facebook.com/EslamOkashaOfficial" target="_blank" rel="noopener" class="btn btn-facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+          فيسبوك
+        </a>
+        <a href="https://instagram.com/EslamOkasha" target="_blank" rel="noopener" class="btn btn-instagram">
+          <i class="fa-brands fa-instagram"></i>
+          انستجرام
+        </a>
+        <a href="https://tiktok.com/@EslamOkasha" target="_blank" rel="noopener" class="btn btn-tiktok">
+          <i class="fa-brands fa-tiktok"></i>
+          تيك توك
+        </a>
       </div>
     </section>
 
     <!-- الفروع -->
-    <section class="branches-section" aria-label="فروع ومكاتب الجملة">
-      <div class="section-header">
-        <div class="section-title">
-          <i class="fa-solid fa-location-dot"></i>
-          فروع ومكاتب الجملة
+    <section aria-label="فروع ومكاتب الجملة">
+      <h2 class="section-heading"><i class="fa-solid fa-location-dot"></i> فروعنا</h2>
+      <p class="section-note">تواصل مع أقرب فرع لك</p>
+
+      <article class="branch-card">
+        <div class="branch-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczMdzqUaR7ZgCJRLnS1EDM1nh_kj_MlPcfAgMxgB09Q&s=10" alt="المقر الرئيسي - الموسكي">
+          <span class="branch-badge">الرئيسي</span>
         </div>
-        <p class="section-subtitle">تواصل مع أقرب فرع لك مباشرة</p>
-      </div>
+        <div class="branch-body">
+          <h3>المقر الرئيسي (الموسكي)</h3>
+          <p>القاهرة، العتبة — شارع الموسكي الرئيسي</p>
+          <div class="branch-actions">
+            <a href="tel:01000000000" class="btn btn-outline">
+              <i class="fa-solid fa-phone"></i>
+              اتصال
+            </a>
+            <a href="https://t.me/EslamOkashaLingerie" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fa-brands fa-telegram"></i>
+              تليجرام
+            </a>
+            <a href="https://maps.google.com/?q=الموسكي+القاهرة" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fa-solid fa-map-location-dot"></i>
+              الخريطة
+            </a>
+          </div>
+        </div>
+      </article>
 
-      <div class="branches-container">
-        
-        <!-- الفرع 1 -->
-        <article class="featured-card">
-          <div class="branch-cover">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRczMdzqUaR7ZgCJRLnS1EDM1nh_kj_MlPcfAgMxgB09Q&s=10" alt="المقر الرئيسي - الموسكي">
-            <span class="branch-tag"><i class="fa-solid fa-star"></i> الرئيسي</span>
+      <article class="branch-card">
+        <div class="branch-image">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkws99bsup4Xgdc-n_lUJBrwGIfZ8gMchqxIkDuduFuNE3IDNaAU8Sr8dXEd3O6HS2riex7oSKKU-hub-g7-jCtdXFCITFR5kijteNjo5QaABozIfWD6rxt4RClJ1G9B7g3wS4XOM336xMp=w408-h307-k-no" alt="معرض المبيعات - صيدناوي">
+        </div>
+        <div class="branch-body">
+          <h3>إسلام عكاشة — عمارت فروح</h3>
+          <p>48 شارع قصر النيل، ميدان مصطفى كامل (الدور الثاني) — و27 شارع الشواذلية، الموسكي</p>
+          <div class="branch-actions">
+            <a href="tel:01100000000" class="btn btn-outline">
+              <i class="fa-solid fa-phone"></i>
+              اتصال
+            </a>
+            <a href="https://t.me/EslamOkashaLingerie" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fa-brands fa-telegram"></i>
+              تليجرام
+            </a>
+            <a href="https://maps.google.com/?q=ممر+صيدناوي+القاهرة" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fa-solid fa-map-location-dot"></i>
+              الخريطة
+            </a>
           </div>
-          <div class="branch-details">
-            <h3>المقر الرئيسي (الموسكي)</h3>
-            <p>القاهرة، العتبة — شارع الموسكي الرئيسي.</p>
-            <div class="action-grid">
-              <a href="tel:01000000000" class="action-link"><i class="fa-solid fa-phone"></i> اتصال</a>
-              <a href="https://t.me/EslamOkashaLingerie" target="_blank" rel="noopener" class="action-link"><i class="fa-solid fa-paper-plane"></i> تليجرام</a>
-              <a href="https://maps.google.com/?q=الموسكي+القاهرة" target="_blank" rel="noopener" class="action-link"><i class="fa-solid fa-map-location-dot"></i> الخريطة</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- الفرع 2 -->
-        <article class="featured-card">
-          <div class="branch-cover">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkws99bsup4Xgdc-n_lUJBrwGIfZ8gMchqxIkDuduFuNE3IDNaAU8Sr8dXEd3O6HS2riex7oSKKU-hub-g7-jCtdXFCITFR5kijteNjo5QaABozIfWD6rxt4RClJ1G9B7g3wS4XOM336xMp=w408-h307-k-no" alt="معرض المبيعات - صيدناوي">
-          </div>
-          <div class="branch-details">
-            <h3>اسلام عكاشه عمارت فروح</h3>
-            <p>فرع وسط البلد في 48 شارع قصر النيل بميدان مصطفى كامل (الدور الثاني، أقرب محطة مترو محمد نجيب)، وفرع العتبة في 27 شارع الشواذلية من شارع الجيش (الموسكي)</p>
-            <div class="action-grid">
-              <a href="tel:01100000000" class="action-link"><i class="fa-solid fa-phone"></i> اتصال</a>
-              <a href="https://t.me/EslamOkashaLingerie" target="_blank" rel="noopener" class="action-link"><i class="fa-solid fa-paper-plane"></i> تليجرام</a>
-              <a href="https://maps.google.com/?q=ممر+صيدناوي+القاهرة" target="_blank" rel="noopener" class="action-link"><i class="fa-solid fa-map-location-dot"></i> الخريطة</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
+        </div>
+      </article>
     </section>
-    <!-- Footer -->
-    <footer class="site-footer">
-      <p>مكتب إسلام عكاشة — جميع الحقوق محفوظة © 2024</p>
+
+    <footer class="footer">
+      <p>جميع الحقوق محفوظة © 2026 مكتب إسلام عكاشة</p>
     </footer>
   </div>
 
-  
-  
-
-  <!-- إشعار النسخ -->
   <div class="toast" id="toast">
-    <i class="fa-solid fa-check-circle"></i>
-    تم نسخ الرقم بنجاح
+    <i class="fa-solid fa-check"></i>
+    تم نسخ الرقم
   </div>
 
+  <!-- شات المكتب -->
+  <!-- <button type="button" id="chat-fab" class="chat-fab" aria-label="فتح شات المكتب">
+    <i class="fa-solid fa-comments"></i>
+    <span>اسألنا</span>
+  </button> -->
+
+  <!-- <div id="chat-panel" class="chat-panel" aria-hidden="true">
+    <div class="chat-header">
+      <div>
+        <strong>مساعد المكتب</strong>
+        <span id="chat-mode-label">استفسارات المكتب فقط</span>
+      </div>
+      <button type="button" id="chat-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="chat-messages" class="chat-messages"></div>
+    <div class="chat-quick" id="chat-quick"></div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" type="text" placeholder="اسأل عن المواعيد، الفروع، التواصل..." autocomplete="off" maxlength="500">
+      <button id="chat-send" type="submit" aria-label="إرسال"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div> -->
+
   <script src="assets/dynamic/app.js"></script>
+  <!-- <script src="assets/dynamic/chat.js"></script> -->
 </body>
 </html>
